@@ -6,15 +6,16 @@
 }
 
 body {
-  background: #2cac87;
-  color: #fff;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
 header {
+background: #ccc;
+padding: 20px 0;
+box-shadow: 0 5px 8px #000;
   text-align: center;
-  margin: 50px auto 50px;
+  margin: 0 auto 50px;
 }
 
 h1,
@@ -42,7 +43,7 @@ form input {
   background: transparent;
   color: #fff;
   font-size: 18px;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 form button {
