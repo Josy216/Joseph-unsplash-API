@@ -6,23 +6,20 @@
 }
 
 body {
+    color: #fff;
+    font-weight: bold;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2OTg1NjB8MHwxfHNlYXJjaHwxfHxiYWNrZ3JvdW5kJTIwZGFya3xlbnwwfHx8fDE3NTAwNTcwNzR8MA&ixlib=rb-4.1.0&q=85);
 }
 
 header {
-background: #ccc;
 padding: 20px 0;
-box-shadow: 0 5px 8px #000;
+margin-top: 65px !important;
 text-align: center;
 margin: 0 0 8px;
 }
 
-h1,
-p {
-  font-weight: bold;
-  color: #000;
-}
 
 form {
   width: 90%;
