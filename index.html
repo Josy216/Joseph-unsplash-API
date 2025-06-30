@@ -1,3 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joseph's Portfolio</title>
+    <meta name="description" content="A photography portfolio by Joseph" />
+    <meta name="author" content="Joseph Teka" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="logo">
+              <i data-lucide="camera" class="logo-icon"></i>
+              <h1 class="logo-text">Unsplash API</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <section class="hero">
+            <h2 class="hero-title">Your source of stunning visuals</h2>
+            <p class="hero-description">
+              Search for any image and discover a world of creativity from the Unsplash community.
+            </p>
+            <form id="search-form" class="search-form">
+              <input 
+                type="text" 
+                id="search-box" 
+                placeholder="Search for mountains, forests, cities..."
+                class="search-input"
+                autocomplete="off"
+              />
+              <button type="submit" class="search-button">
+                <span class="button-text">Search</span>
+                <i data-lucide="loader-2" class="loading-icon" style="display: none;"></i>
+              </button>
+            </form>
+          </section>
+
+          <div id="loading" class="loading" style="display: none;">
+            <i data-lucide="loader-2" class="loading-spinner"></i>
+          </div>
+
+          <div id="error-message" class="error-message" style="display: none;">
+            <p>Error loading images. Please try again.</p>
+          </div>
+
+          <div id="no-results" class="no-results" style="display: none;">
+            <p>No images found. Start by searching for something.</p>
+          </div>
+
+          <div id="search-result" class="image-grid"></div>
+
+          <div class="show-more-container">
+            <button id="show-more" class="show-more-button" style="display: none;">
+              <span class="button-text">Show More</span>
+              <i data-lucide="loader-2" class="loading-icon" style="display: none;"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
   <head>
